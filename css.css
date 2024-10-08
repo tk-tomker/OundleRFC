@@ -78,7 +78,7 @@ body{
     padding: 10px 20px;
     background-color: #333;
     color: #f1f1f1;
-    border-radius: 0;
+    border-radius: 20;
     transition: .2s;
 }
 
@@ -86,4 +86,19 @@ body{
     border: 1px solid #333;
     background-color: #fff;
     color:#000;
+}
+
+.modal-header, h4, .close{
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-header, .modal-body{
+    padding: 40px 50px;
+}
+
+.nav-tabs li a{
+    color: #777;
 }

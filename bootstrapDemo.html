@@ -110,7 +110,7 @@
                     <img src="ORFC-ACADEMY.jpg" alt="">
                     <p><strong>ORFC ACADEMY</strong></p>
                     <p>Tue 10 Sep 2024</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn" data-target="#myModal" data-toggle="modal">Buy Tickets</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -118,7 +118,7 @@
                     <img src="orfcfamily.jpg" alt="">
                     <p><strong>ORFC Family Day!</strong></p>
                     <p>Tue 10 Sep 2024</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn" data-target="#myModal" data-toggle="modal">Buy Tickets</button>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -126,9 +126,95 @@
                     <img src="international.jpeg" alt="">
                     <p><strong>Autumn Series International Tickets</strong></p>
                     <p>Sun 28 Apr 2024</p>
-                    <button class="btn">Buy Tickets</button>
+                    <button class="btn" data-target="#myModal" data-toggle="modal">Buy Tickets</button>
+                </div>
+            </div>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+                                    <input type="number" class="form-control" id="psw" placeholder="How many?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span>Send To</label>
+                                    <input type="text" class="form-control" id="usrnname" placeholder="Enter email">
+                                </div>
+                                <button type="submit" class="btn btn-block">Pay <span class="glyphicon glyphicon-ok"></span></button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            <p>Need <a href="#">help?</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h3 class="text-center">Contanct</h3>
+            <p class="text-center"><em>Get Involved!</em></p>
+            <div class="row test">
+                <div class="col-md-4">
+                    <p>Want to play? Drop a note.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Oundle, UK</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +44 1234 56789</p>
+                    <p><span class="glyphicon glyphicon-evnvelope"></span>Email: mail@mail.com</p>
+                </div>
+                <div class="col-me-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" row="5"></textarea>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right" type="submit"> Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">OUndle RFC</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#band">BAND</a></li>
+                        <li><a href="#tour">TOUR</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Merchendaise</a></li>
+                                <li><a href="#">Extras</a></li>
+                                <li><a href="#">Media</a></li>
+                            </ul>
+                        </li>
+                        <li
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </body>
 </html>
